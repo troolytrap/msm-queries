@@ -22,4 +22,10 @@
 <% the_director = matching_records.at(0) %>
 <%=the_director.name%>
 </dd>
+
+<dt>Created at</dt>
+<dd><%= @the_movie.created_at %></dd>
+
+<dt>Updated at</dt>
+<dd><%= @the_movie.updated_at %></dd>
 </dl>

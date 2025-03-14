@@ -12,7 +12,12 @@
 <dd><img src ="<%= @the_director.image%>"></dd>
 <dt>Created at</dt>
 <dd><%= @the_director.created_at%></dd>
+<dt>Updated at</dt>
+<dd><%= @the_director.updated_at %></dd>
+
 </dl>
+
+
 
 <h2>Filmography</h2>
 <% matching_movies = Movie.where({ :director_id => @the_director.id })%>
